@@ -46,6 +46,25 @@ p {
     align-items: center;
     text-align: center;}
 
+.venta {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.venta img {
+    width: 70%; 
+    height: auto;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+
+
 .venta:hover {
     transform: scale(1.05);
     transition: transform 0.10s ease, box-shadow 0.3s ease;}
@@ -181,27 +200,52 @@ nav {
     flex-wrap: wrap;    
     font-size: 30px;}
 
-.bannerrecital,.cds,.gira {
+.gira {
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;}
+
+.cds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
 
 .gira img {
     flex: 1 1 140px;
     max-width: 160px;
     height: auto;
     border-radius: 15px;
-    transition: transform 0.30s ease, box-shadow 0.3s ease;
-}
+    transition: transform 0.30s ease, box-shadow 0.3s ease;}
 
 .portada img {
     width: 100%;
     max-width: 300px;
     height: auto;
     border-radius: 15px;
+    transition: transform 0.30s ease, box-shadow 0.3s ease;}
+
+.banner img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    border-radius: 15px;
     transition: transform 0.30s ease, box-shadow 0.3s ease;
 }
+
+.banner img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 .gira img:hover,.portada img:hover {
     transform: scale(1.1);
@@ -233,8 +277,7 @@ nav {
     flex: 1;
     color: white;
     text-align: justify;
-    max-width: 100%;
-}
+    max-width: 100%;}
 
 h2 {
     text-align: center;
@@ -322,43 +365,52 @@ legend {
     gap: 2rem;
     margin-top: 2rem;}
 
+
 @media (max-width: 1024px) {
-    .titulos { font-size: 40px; }
-    .titulo2, .info, .letras, .boton, .boton2, .botonsubir, .error, .enviar {
-        font-size: 20px;
-    }
-    .integrantes { font-size: 25px; }
+.titulos { font-size: 40px; }
+.integrantes { font-size: 25px; }
+.titulo2, .info, .letras { font-size: 20px; width: 90%; }
+.boton, .boton2, .botonsubir, .error, .enviar { font-size: 18px; }
+.header, nav, .top, .contenedorIzq, .contenedorDer, .inputs, .env-ren {
+    flex-direction: column;
+    align-items: center;
+}
+.avenged, .sevenfold { font-size: 30px; }
+.spotify, .mapa, .cds, .gira, .texto, .derecha { width: 80%; text-align: center; }
+.lyrics { width: 95%; font-size: 16px; }
+.portada img, .gira img { max-width: 100%; }
+.consulta textarea, .inputs input, .pais select { width: 90%; }
+.letra-cancion { width: 90%; font-size: 18px; }
+.venta { width: 45%; }
+.cds { justify-content: space-around; }
+.banner img { max-width: 90%; }
 }
 
 @media (max-width: 768px) {
-    .header, nav, .top, .contenedorIzq, .contenedorDer, .inputs, .env-ren {
-        flex-direction: column;
-        align-items: center;
-    }
-    .avenged, .sevenfold { font-size: 30px; }
-    .logo { height: 60px; }
-    .spotify, .mapa, .bannerrecital, .cds, .gira, .texto, .derecha {
-        width: 50%;
-        text-align: center;
-    }
-    .titulos { font-size: 32px; }
-    .titulo2, .info, .letras { font-size: 18px; width: 90%; }
-    .lyrics { width: 95%; font-size: 14px; }
-    .portada img, .gira img { max-width: 90%; }
-    .consulta textarea, .inputs input, .pais select { width: 90%; }
-    .botonsubir, .error, .enviar { font-size: 16px; }
-    .info, .letra-cancion { width: 90%; }
+.titulos { font-size: 32px; }
+.integrantes { font-size: 22px; }
+.titulo2, .info, .letras { font-size: 18px; width: 95%; }
+.boton, .boton2, .botonsubir, .error, .enviar { font-size: 16px; }
+.logo { height: 60px; }
+.spotify, .mapa, .cds, .gira, .texto, .derecha { width: 100%; text-align: center; }
+.lyrics { font-size: 14px; }
+.consulta textarea, .inputs input, .pais select { width: 95%; }
+.letra-cancion { font-size: 16px; }
+.venta { width: 48%; }
+.banner img { max-width: 95%; }
 }
 
 @media (max-width: 480px) {
-    .titulos { font-size: 26px; }
-    .titulo2, .info, .letras, .boton, .boton2, .botonsubir, .error, .enviar {
-        font-size: 16px;
-    }
-    .logo { height: 50px; }
-    .spotify, .mapa { width: 100%; }
-    .portada img, .gira img { max-width: 100%; }
-    .letra-cancion { font-size: 18px; }
-    .lyrics { font-size: 13px; }
-    .texto, .derecha { font-size: 14px; }
+.titulos { font-size: 26px; }
+.integrantes { font-size: 18px; }
+.titulo2, .info, .letras { font-size: 16px; width: 100%; }
+.boton, .boton2, .botonsubir, .error, .enviar { font-size: 14px; }
+.logo { height: 50px; }
+.spotify, .mapa, .cds, .gira, .texto, .derecha { width: 100%; text-align: center; }
+.lyrics { font-size: 13px; width: 100%; }
+.consulta textarea, .inputs input, .pais select { width: 100%; }
+.letra-cancion { font-size: 14px; width: 100%; }
+.venta { width: 100%; }
+.cds { flex-direction: column; align-items: center; }
+.banner img { max-width: 100%; }
 }
