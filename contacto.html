@@ -14,16 +14,12 @@
 <body>
     <header class="header">
         <div class="top">
-            <div class="avenged">Avenged</div>
             <img src="calavera.jpg" alt="Logo" class="logo" id="subir">
-            <nav>
                 <a href="historia.html" class="boton">Historia</a>
                 <a href="tour.html" class="boton">Tour</a>
                 <a href="discografia.html" class="boton">Discografía</a>
                 <a href="index.html" class="boton">Inicio</a>
-            </nav>
             <img src="calavera.jpg" alt="Logo" class="logo">
-            <div class="sevenfold">Sevenfold</div>
         </div>
     </header>
 
@@ -44,35 +40,35 @@
 
 
 <fieldset>
-<legend>>Envía tu consulta y enteráte de todas las novedads de la gira 2025</legend>
-<div class="inputs">
-<input type="text" tabindex="1" placeholder="Ingrese usuario" name="Usuario" id="">
-<input type="password" tabindex="2" minlength="8" placeholder="Ingrese contraseña" name="Contra" id="">
-<input type="email" tabindex="3" placeholder="Ingrese email" name="" id="">
-</div>
+<legend>Enviá tu consulta y enterate de todas las novedades de la gira 2025</legend>
 
+<div class="inputs">
+<input type="text" name="Usuario" placeholder="Ingrese usuario" required tabindex="1">
+<input type="password" name="Contra" placeholder="Ingrese contraseña" minlength="8" required tabindex="2">
+<input type="email" name="Email" placeholder="Ingrese email" required tabindex="3">
 <div class="pais">
 <select name="pais" id="pais" required>
-<option value="Pais" selected disabled>País</option>
-<option value="Argentina">Argentina</option>
-<option value="Chile">Chile</option>
-<option value="Brasil">Brasil</option>
-<option value="Colombia">Colombia</option>
-<option value="México">México</option>
-<option value="Puerto Rico">Puerto Rico</option>
+    <option value="" selected disabled>País</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Chile">Chile</option>
+    <option value="Brasil">Brasil</option>
+    <option value="Colombia">Colombia</option>
+    <option value="México">México</option>
+    <option value="Puerto Rico">Puerto Rico</option>
 </select>
 </div>
+</div>
 
-<div class="consulta">
-<label>
-Consulta:
-</label>
-<textarea name="mensaje" tabindex="" maxlength="100" id="" cols="80" rows="5"></textarea>
+
+
+<div class="consulta" style="display: flex; justify-content: center;">
+<label for="mensaje">Consulta: </label>
+<textarea name="mensaje" id="mensaje" maxlength="100" rows="5" cols="80" required></textarea>
 </div>
 
 <label for="novedades">
-    Mantenerse actualizado en las novedades
-<input type="checkbox" name="" id="novedades">
+<input type="checkbox" name="Novedades" id="novedades" required>
+Mantenerse actualizado en las novedades
 </label>
 
 <div class="env-ren">
